@@ -1,0 +1,22 @@
+{
+  "name": "anuncios-animados-proyecto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto Remotion para anuncios animados verticales 1080x1920 (skill anuncios-animados)",
+  "scripts": {
+    "studio": "remotion studio",
+    "composiciones": "remotion compositions",
+    "render": "remotion render"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.526",
+    "@remotion/google-fonts": "4.0.526",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.526"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,42 @@
+# Dependencias
+node_modules/
+package-lock.json.bak
+
+# Llaves y configuración personal (NUNCA subir)
+.env
+*.env
+llaves.env
+perfil.json
+config/
+
+# Material pesado y resultados (se generan, no se versionan)
+material/
+out/
+revision/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.webm
+
+# Imágenes generadas dentro de un proyecto
+assets/template/public/recortes/*
+assets/template/public/escenografia/*
+assets/template/public/voz/*
+assets/template/public/musica/*
+assets/template/public/sfx/*
+!**/.gitkeep
+
+# Datos de proyectos (cada proyecto los genera)
+assets/template/src/data/*.manifest.json
+assets/template/src/data/*.palabras.json
+!assets/template/src/data/ejemplo.manifest.json
+!assets/template/src/data/ejemplo.palabras.json
+assets/template/guiones/*.resultados.json
+
+# Modelos y cachés
+.remotion/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

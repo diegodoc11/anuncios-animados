@@ -1,0 +1,13 @@
+{
+  "id": "ejemplo",
+  "estilo": "vintage-50s",
+  "banner": "de 12 cafés al día a 11.200 al mes",
+  "cta": "Toca el botón",
+  "beats": [
+    {"id": "ejemplo-01", "texto": "Don Julio vendía 12 cafés al día en la esquina de su barrio."},
+    {"id": "ejemplo-02", "texto": "Probó volantes, probó descuentos, probó regalar galletas. Nada movió la aguja."},
+    {"id": "ejemplo-03", "texto": "Hasta que grabó un video de 30 segundos mostrando cómo tuesta su café."},
+    {"id": "ejemplo-04", "texto": "Ese mes vendió 11.200 cafés con el mismo local y el mismo café."},
+    {"id": "ejemplo-05", "texto": "Toca el botón y arma tu primer anuncio animado hoy mismo."}
+  ]
+}

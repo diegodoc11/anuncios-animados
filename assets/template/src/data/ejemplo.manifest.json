@@ -1,0 +1,37 @@
+{
+  "fps": 30,
+  "pad": 5,
+  "estimado": true,
+  "beats": [
+    {
+      "id": "ejemplo-01",
+      "texto": "Don Julio vendía 12 cafés al día en la esquina de su barrio.",
+      "frames": 154,
+      "segundos": 4.966
+    },
+    {
+      "id": "ejemplo-02",
+      "texto": "Probó volantes, probó descuentos, probó regalar galletas. Nada movió la aguja.",
+      "frames": 226,
+      "segundos": 7.379
+    },
+    {
+      "id": "ejemplo-03",
+      "texto": "Hasta que grabó un video de 30 segundos mostrando cómo tuesta su café.",
+      "frames": 181,
+      "segundos": 5.862
+    },
+    {
+      "id": "ejemplo-04",
+      "texto": "Ese mes vendió 11.200 cafés con el mismo local y el mismo café.",
+      "frames": 183,
+      "segundos": 5.931
+    },
+    {
+      "id": "ejemplo-05",
+      "texto": "Toca el botón y arma tu primer anuncio animado hoy mismo.",
+      "frames": 144,
+      "segundos": 4.621
+    }
+  ]
+}

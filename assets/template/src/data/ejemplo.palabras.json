@@ -1,0 +1,7 @@
+{
+ "ejemplo-01": [["Don", 0], ["Julio", 8], ["vendía", 21], ["doce", 35], ["cafés", 46], ["al", 58], ["día", 64], ["en", 72], ["la", 79], ["esquina", 85], ["de", 101], ["su", 108], ["barrio.", 114]],
+ "ejemplo-02": [["Probó", 0], ["volantes,", 12], ["probó", 43], ["descuentos,", 56], ["probó", 91], ["regalar", 103], ["galletas.", 120], ["Nada", 159], ["movió", 170], ["la", 182], ["aguja.", 188]],
+ "ejemplo-03": [["Hasta", 0], ["que", 12], ["grabó", 21], ["un", 33], ["video", 39], ["de", 52], ["treinta", 58], ["segundos", 74], ["mostrando", 93], ["cómo", 114], ["tuesta", 124], ["su", 139], ["café.", 145]],
+ "ejemplo-04": [["Ese", 0], ["mes", 8], ["vendió", 17], ["once", 31], ["mil", 41], ["doscientos", 50], ["cafés", 72], ["con", 85], ["el", 93], ["mismo", 99], ["local", 112], ["y", 124], ["el", 128], ["mismo", 134], ["café.", 147]],
+ "ejemplo-05": [["Toca", 0], ["el", 10], ["botón", 17], ["y", 29], ["arma", 33], ["tu", 43], ["primer", 50], ["anuncio", 64], ["animado", 81], ["hoy", 97], ["mismo.", 106]]
+}
