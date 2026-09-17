@@ -56,7 +56,12 @@ def llaves() -> dict:
 
 
 def llave(nombre: str, obligatoria: bool = True) -> str:
-    valor = os.environ.get(nombre) or llaves().get(nombre, "")
+    # Manda lo que guardó la configuración de la skill; la variable de entorno es el respaldo.
+    # (En muchos computadores hay variables viejas de otras herramientas que ya no sirven.)
+    valor = llaves().get(nombre, "") or os.environ.get(nombre, "")
+    if valor and nombre == "ELEVENLABS_API_KEY" and not valor.startswith("sk_"):
+        aviso("Esa llave de ElevenLabs no parece una llave: las buenas empiezan por 'sk_' "
+              "(lo que hay se parece más al ID de la llave). Vuelve a copiarla desde elevenlabs.io.")
     if not valor and obligatoria:
         salir(f"Falta {nombre}. Corre la configuración de la skill (scripts/configurar.py) "
               f"o define la variable de entorno {nombre}.")

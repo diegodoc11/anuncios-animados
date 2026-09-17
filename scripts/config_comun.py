@@ -45,7 +45,12 @@ def guardar_llave(nombre: str, valor: str) -> None:
 
 
 def llave(nombre: str) -> str:
-    return os.environ.get(nombre) or leer_llaves().get(nombre, "")
+    # Manda lo que guardó la configuración; la variable de entorno es solo el respaldo
+    # (suele haber variables viejas de otras herramientas que ya no sirven).
+    valor = leer_llaves().get(nombre, "") or os.environ.get(nombre, "")
+    if valor and nombre == "ELEVENLABS_API_KEY" and not valor.startswith("sk_"):
+        print("⚠️  Esa llave de ElevenLabs no parece una llave: las buenas empiezan por 'sk_'.")
+    return valor
 
 
 def leer_perfil() -> dict:

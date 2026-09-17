@@ -286,6 +286,7 @@ Entrega `out/a1-final.mp4` (audio a -14 LUFS, listo para pautar) y `out/a1-celul
 | El render se cae en un beat | casi siempre es un ancla mala | `python -X utf8 pipeline/revisar_anuncio.py <id>` |
 | Sale un marcador punteado | falta esa imagen en `public/recortes/` | genera la imagen o corrige el nombre |
 | La voz se comió una palabra | el 1.1x fue mucho para ese beat | `"tempo": 1.0` en ese beat y repite apretar + transcribir |
+| `invalid_api_key` en ElevenLabs | se está usando el **ID** de la llave, no la llave | la llave buena empieza por `sk_`; vuelve a copiarla y guárdala con `configurar.py llave ELEVENLABS_API_KEY` |
 | El recorte quedó con halo verde | el fondo del dibujo no era plano | `pipeline/recortar.py <original> <destino> --estilo <estilo> --tolerancia 1.5` |
 | La música tapa la voz | quedó alta | `preparar_musica.py … --debajo 18` |
 | Todo entra tarde o temprano | cambiaste la voz y no re-transcribiste | vuelve a correr `transcribir_voz.py` (los tiempos se re-sincronizan solos) |
