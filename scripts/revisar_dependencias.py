@@ -15,9 +15,15 @@ SO = platform.system()  # Windows | Darwin | Linux
 
 
 def version_de(cmd: list[str]) -> str:
+    # En Windows, npm y npx son archivos .cmd: hay que llamarlos por su ruta completa.
+    ejecutable = shutil.which(cmd[0])
+    if not ejecutable:
+        return ""
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        return (r.stdout or r.stderr).strip().splitlines()[0]
+        r = subprocess.run([ejecutable, *cmd[1:]], capture_output=True, text=True, timeout=60,
+                           encoding="utf-8", errors="replace")
+        salida = (r.stdout or r.stderr or "").strip().splitlines()
+        return salida[0] if salida else ""
     except Exception:
         return ""
 
@@ -45,7 +51,7 @@ filas.append(("Node.js 18 o más", nodo or "no está", bien, como_instalar("node
 falta_algo |= not bien
 
 # npm
-npm = version_de(["npm", "--version"]) if shutil.which("npm") else ""
+npm = version_de(["npm", "--version"])
 filas.append(("npm", npm or "no está", bool(npm), como_instalar("node")))
 falta_algo |= not npm
 
